@@ -3,9 +3,12 @@ Title: AGH Bayesian methods in data analysis: utils and data
 Version: 0.0.0.9000
 Authors@R: 
     person("Maciej", "Smołka", , "smolka@agh.edu.pl", role = c("aut", "cre"))
-Description: Utils and data for AGH 2nd level course AGH Bayesian methods
+Description: Utils and data for AGH 2nd level course: Bayesian methods
   for data analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Imports: 
+    distributions3,
+    HDInterval
