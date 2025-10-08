@@ -16,3 +16,14 @@ Depends:
 LazyData: true
 URL: https://github.com/maciejsmolka/mbwadr
 BugReports: https://github.com/maciejsmolka/mbwadr/issues
+Suggests: 
+    bayesplot,
+    brms,
+    distributions3,
+    loo,
+    modeest,
+    plot3D,
+    posterior,
+    rstan,
+    tidybayes,
+    tidyverse
