@@ -2,6 +2,18 @@
 #'
 "absences"
 
+#' Goals won by a football team in 64 subsequent games
+#'
+"goals"
+
+#' Goals won by a football team in 200 subsequent games
+#'
+"goals2"
+
+#' Thicknesses of metal plates in millimeters
+#'
+"plates"
+
 #' Tosses of two different coins
 #'
 "two_coins"
