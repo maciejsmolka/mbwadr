@@ -4,7 +4,7 @@
 \alias{hdi.distribution}
 \title{Compute the HDI for a distribution}
 \usage{
-hdi.distribution(d, credMass = 0.95, ...)
+\method{hdi}{distribution}(d, credMass = 0.95, ...)
 }
 \arguments{
 \item{d}{A distribution from \code{distributions3} package.}

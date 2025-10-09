@@ -7,7 +7,7 @@
 #'
 #' @seealso [HDInterval::hdi()]
 #'
-#' @export
+#' @exportS3Method HDInterval::hdi
 hdi.distribution <- function(d, credMass = 0.95, ...) {
   HDInterval::hdi(
     function(q) stats::quantile(d, q),
