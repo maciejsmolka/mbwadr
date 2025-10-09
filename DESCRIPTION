@@ -23,6 +23,7 @@ Suggests:
     loo,
     modeest,
     plot3D,
+    plotly,
     posterior,
     rstan,
     tidybayes,
