@@ -1,6 +1,6 @@
 Package: mbwadr
 Title: AGH Bayesian methods in data analysis: utils and data
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: 
     person("Maciej", "Smołka", , "smolka@agh.edu.pl", role = c("aut", "cre"))
 Description: Utils and data for AGH 2nd level course: Bayesian methods
