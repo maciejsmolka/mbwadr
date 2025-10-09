@@ -9,6 +9,16 @@
 #' @export
 show_central <- function(value, y, type = "mean", digits = 3, col = "blue") {
   stopifnot(type %in% c("mean", "mode"))
+  stopifnot(is.numeric(value))
+
+  if (!is.finite(value)) {
+    caption <- paste("No", type)
+    xlims <- graphics::par("usr")
+    x <- (xlims[1] + xlims[2]) / 2
+    graphics::text(x, y, caption, col = col)
+    return(invisible())
+  }
+
   val_rounded <- signif(value, digits)
   caption <- ""
   switch (type,
