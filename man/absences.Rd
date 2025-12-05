@@ -3,14 +3,18 @@
 \docType{data}
 \name{absences}
 \alias{absences}
-\title{Absences of students}
+\title{Student absences}
 \format{
-An object of class \code{data.frame} with 8 rows and 2 columns.
+A \code{data.frame} with 8 rows and 2 columns:
+\describe{
+\item{\code{n_absences}}{Number of absences.}
+\item{\code{n_students}}{Number of students with a given absence level.}
+}
 }
 \usage{
 absences
 }
 \description{
-Absences of students
+Absences of students in a semester.
 }
 \keyword{datasets}

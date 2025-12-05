@@ -3,14 +3,36 @@
 \docType{data}
 \name{fish}
 \alias{fish}
-\title{Fishing data}
+\title{Fishing at a state park}
 \format{
-An object of class \code{data.frame} with 250 rows and 8 columns.
+A \code{data.frame} with 250 rows and 8 columns:
+\describe{
+\item{\code{nofish}}{? A factor with 2 levels: 0 and 1.}
+\item{\code{livebait}}{Did the group use a live bait?
+A factor with 2 levels: 0 and 1.}
+\item{\code{camper}}{Did the group bring a camper to the park?
+A factor with 2 levels: 0 and 1.}
+\item{\code{persons}}{How many people were in the group?}
+\item{\code{child}}{How many children were in the group?}
+\item{\code{xb}}{?}
+\item{\code{zg}}{?}
+\item{\code{count}}{Number of fish caught.}
+}
+}
+\source{
+University of California, Los Angeles data repository
+\url{https://stats.idre.ucla.edu/stat/data/fish.csv}
 }
 \usage{
 fish
 }
 \description{
-Fishing data
+This dataset records how many fish are being caught
+by fishermen at a state park. Visitors were asked how long they had stayed,
+how many people had been in the group, had there been children in the group
+and how many fish had been caught. Some visitors did not fish, but there is
+no data on whether a person fished or not. Some visitors who did fish did
+not catch any fish so there are excess zeros in the data because of the
+people that did not fish.
 }
 \keyword{datasets}

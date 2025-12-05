@@ -3,14 +3,25 @@
 \docType{data}
 \name{TherapeuticTouch}
 \alias{TherapeuticTouch}
-\title{Data from an experiment on the therapeutic touch}
+\title{Therapeutic touch study}
 \format{
-An object of class \code{data.frame} with 280 rows and 2 columns.
+A \code{data.frame} with 280 rows and 2 columns:
+\describe{
+\item{\code{y}}{Result of experiment: 1 for success, 0 for failure.}
+\item{\code{s}}{Person ID (in fact 2 persons were examined twice with different IDs).
+A factor with 28 levels.}
+}
+}
+\source{
+John K. Kruschke,
+\emph{Doing Bayesian Data Analysis: A Tutorial with R, JAGS  and Stan (2nd Edition)},
+Academic Press, 2014.
+\url{https://sites.google.com/site/doingbayesiandataanalysis/software-installation}
 }
 \usage{
 TherapeuticTouch
 }
 \description{
-Data from an experiment on the therapeutic touch
+Data from an experiment on the therapeutic touch.
 }
 \keyword{datasets}

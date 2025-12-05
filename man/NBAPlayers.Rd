@@ -3,14 +3,22 @@
 \docType{data}
 \name{NBAPlayers}
 \alias{NBAPlayers}
-\title{NBA player statistics from 2022/23 regular season}
+\title{NBA players 2022/23}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 539 rows and 31 columns.
+A tibble (a data frame) with 539 rows and 31 columns.
+}
+\source{
+\url{https://www.basketball-reference.com/leagues/NBA_2023_per_game.html}
 }
 \usage{
 NBAPlayers
 }
 \description{
-NBA player statistics from 2022/23 regular season
+NBA player per-game statistics from 2022/23 regular season.
+}
+\details{
+For players that changed teams during the regular season only total
+scores are shown (for such players \code{Tm == TOT}). Some players were fielded
+at two different positions: then only the first position is shown.
 }
 \keyword{datasets}

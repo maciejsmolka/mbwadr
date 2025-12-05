@@ -3,14 +3,15 @@
 \docType{data}
 \name{plates}
 \alias{plates}
-\title{Thicknesses of metal plates in millimeters}
+\title{Plate thickness}
 \format{
-An object of class \code{numeric} of length 25.
+A numeric vector of length 25.
 }
 \usage{
 plates
 }
 \description{
-Thicknesses of metal plates in millimeters
+Thicknesses of metal plates coming from a production line, in millimeters
+(simulated data).
 }
 \keyword{datasets}

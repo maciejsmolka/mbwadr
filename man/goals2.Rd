@@ -3,14 +3,14 @@
 \docType{data}
 \name{goals2}
 \alias{goals2}
-\title{Goals won by a football team in 200 subsequent games}
+\title{Goals from 200 games}
 \format{
-An object of class \code{numeric} of length 200.
+A numeric vector of length 200.
 }
 \usage{
 goals2
 }
 \description{
-Goals won by a football team in 200 subsequent games
+Goals won by a football team in 200 subsequent games (simulated data).
 }
 \keyword{datasets}

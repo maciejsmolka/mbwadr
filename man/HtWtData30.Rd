@@ -3,14 +3,25 @@
 \docType{data}
 \name{HtWtData30}
 \alias{HtWtData30}
-\title{Height/weigth data - 30 people}
+\title{Height/weight data}
 \format{
-An object of class \code{data.frame} with 30 rows and 3 columns.
+A \code{data.frame} with 30 rows and 3 columns:
+\describe{
+\item{\code{male}}{Is the person male? A factor with 2 levels: "Yes" and "No"}
+\item{\code{height}}{The person's height (in inches).}
+\item{\code{weight}}{The person's weight (in pounds).}
+}
+}
+\source{
+John K. Kruschke,
+\emph{Doing Bayesian Data Analysis: A Tutorial with R, JAGS  and Stan (2nd Edition)},
+Academic Press, 2014.
+\url{https://sites.google.com/site/doingbayesiandataanalysis/software-installation}
 }
 \usage{
 HtWtData30
 }
 \description{
-Height/weigth data - 30 people
+Sex, height and weight data from 30 people.
 }
 \keyword{datasets}

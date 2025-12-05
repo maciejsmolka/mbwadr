@@ -3,14 +3,20 @@
 \docType{data}
 \name{PremierLeague2021}
 \alias{PremierLeague2021}
-\title{English Premier League game statistics from 2021/22 season}
+\title{Premier League 2021/22}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 380 rows and 107 columns.
+A tibble with 380 rows and 107 columns.
+}
+\source{
+\url{https://www.kaggle.com/datasets/saife245/english-premier-league/}
 }
 \usage{
 PremierLeague2021
 }
 \description{
-English Premier League game statistics from 2021/22 season
+English Premier League game statistics from 2021/22 season.
+}
+\seealso{
+\code{\link[tibble:tibble]{tibble::tibble()}}
 }
 \keyword{datasets}

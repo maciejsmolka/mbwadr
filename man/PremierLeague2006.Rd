@@ -3,14 +3,20 @@
 \docType{data}
 \name{PremierLeague2006}
 \alias{PremierLeague2006}
-\title{English Premier League game statistics from 2006/7 season}
+\title{Premier League 2006/7}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 380 rows and 24 columns.
+A tibble with 380 rows and 24 columns.
+}
+\source{
+\url{https://www.kaggle.com/datasets/saife245/english-premier-league/}
 }
 \usage{
 PremierLeague2006
 }
 \description{
-English Premier League game statistics from 2006/7 season
+English Premier League game statistics from 2006/7 season.
+}
+\seealso{
+\code{\link[tibble:tibble]{tibble::tibble()}}
 }
 \keyword{datasets}
