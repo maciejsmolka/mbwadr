@@ -19,12 +19,17 @@ BugReports: https://github.com/maciejsmolka/mbwadr/issues
 Suggests: 
     bayesplot,
     brms,
+    distributional,
     distributions3,
+    ggdist,
+    lme4,
     loo,
+    MASS,
     modeest,
     plot3D,
     plotly,
     posterior,
     rstan,
     tidybayes,
-    tidyverse
+    tidyverse,
+    ucimlrepo
