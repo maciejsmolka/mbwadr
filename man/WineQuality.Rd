@@ -42,10 +42,4 @@ The data were collected from May 2004 to February 2007 using only protected
 designation of origin samples that were tested at the oﬃcial certification
 entity (CVRVV).
 }
-\details{
-All numerical columns (\code{fixed_acidity} to \code{alcohol}) have been standardized
-to facilitate the use of ordinal regression and other ML models.
-Nevertheless, their
-description refers to the original measurements.
-}
 \keyword{datasets}

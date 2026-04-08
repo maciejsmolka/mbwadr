@@ -329,11 +329,6 @@
 #' designation of origin samples that were tested at the oﬃcial certification
 #' entity (CVRVV).
 #'
-#' All numerical columns (`fixed_acidity` to `alcohol`) have been standardized
-#' to facilitate the use of ordinal regression and other ML models.
-#' Nevertheless, their
-#' description refers to the original measurements.
-#'
 #' @format A `data.frame` with 6497 rows and 13 columns:
 #' \describe{
 #'  \item{`fixed_acidity`}{Amount (g) of tartaric acid in dm^3.}
@@ -362,3 +357,11 @@
 #' [dataset with ID 186](https://archive.ics.uci.edu/dataset/186/)
 #'
 "WineQuality"
+
+#' Wine quality (scaled version)
+#'
+#' A transformed version of [WineQuality].
+#' All numerical columns (`fixed_acidity` to `alcohol`) have been standardized
+#' to facilitate the use of ordinal regression and other ML models.
+#'
+"WineQualityScaled"
