@@ -8,7 +8,6 @@ Description: Utils and data for AGH 2nd level course: Bayesian methods
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Imports: 
     HDInterval
 Depends: 
@@ -29,7 +28,11 @@ Suggests:
     plot3D,
     plotly,
     posterior,
+    projpred,
     rstan,
+    testthat (>= 3.0.0),
     tidybayes,
     tidyverse,
     ucimlrepo
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.1
