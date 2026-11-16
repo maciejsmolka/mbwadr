@@ -63,3 +63,51 @@ show_mle <- function(mle, y = 0, digits = 3, pos = 3, col = "orange") {
   graphics::abline(v = mle, col = col)
   graphics::text(mle, y, paste("MLE = ", round(mle, digits)), pos = pos, col = col)
 }
+
+#' Plots beta distributions as conjugate prior and posterior with MLE
+#' 
+#' @param alpha_prior Numeric scalar. alpha pameter of prior beta distribution.
+#' @param beta_prior Numeric scalar. beta pameter of prior beta distribution.
+#' @param z Integer scalar. Number of successes.
+#' @param N Integer scalar. Number of trials.
+#' @param cols Character vector of length 3. Colors for prior, posterior and MLE lines.
+#' 
+#' @export
+plot_beta_conjugates <- 
+  function(
+    alpha_prior, 
+    beta_prior, 
+    z, 
+    N,
+    cols = c("black", "red", "blue")
+  ) {
+    stopifnot(z < N)
+    prior <- distributions3::Beta(alpha_prior, beta_prior)
+    alpha_post <- alpha_prior + z
+    beta_post <- beta_prior + N - z
+    posterior <- distributions3::Beta(alpha_post, beta_post)
+    
+    plot(c(prior, posterior), xlab = expression(theta), ylab = "p")
+    graphics::abline(
+      v = modeest::betaMode(alpha_prior, beta_prior), 
+      col = cols[1], 
+      lty = "dashed"
+    )
+    graphics::abline(v = z / N, col = cols[3], lty = "dashed")
+    graphics::abline(
+      v = modeest::betaMode(alpha_post, beta_post), 
+      col = cols[2], 
+      lty = "dashed"
+    )
+    graphics::legend(
+      "topleft", 
+      legend = 
+        c(
+          expression(omega[prior]), 
+          expression(omega[post]), 
+          expression(hat(theta)[MLE])
+        ),
+      lty = "dashed",
+      col = cols
+    )
+  }
