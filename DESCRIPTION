@@ -11,7 +11,7 @@ Roxygen: list(markdown = TRUE)
 Imports: 
     HDInterval
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1)
 LazyData: true
 URL: https://github.com/maciejsmolka/mbwadr
 BugReports: https://github.com/maciejsmolka/mbwadr/issues
@@ -30,6 +30,7 @@ Suggests:
     plotly,
     posterior,
     projpred,
+    RcppEigen,
     rstan,
     testthat (>= 3.0.0),
     tidybayes,
